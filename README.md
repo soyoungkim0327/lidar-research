@@ -3,7 +3,6 @@
 ## Project Overview
 This project implements a **Deep Learning-based LiDAR Super-Resolution (SR)** framework to enhance sparse 8-channel LiDAR data into high-density 128-channel representations. By integrating **Knowledge Distillation (KD)** and **Semantic Segmentation**, the system significantly improves object recognition performance in low-cost sensor environments.
 
-* **Role:** Independent Researcher (Data Collection, Model Design, Evaluation)
 * **Environment:** CARLA Simulator 0.9.16, PyTorch, YOLOv11, TensorRT
 * **Key Achievement:** Reduced MAE by **68.4%** and improved Structural Similarity (SSIM) by **41.2%**.
 
