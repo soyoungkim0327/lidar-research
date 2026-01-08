@@ -1,6 +1,6 @@
 # LiDAR Super-Resolution & Knowledge Distillation for Autonomous Driving
 
-## 📌 Project Overview
+## Project Overview
 This project implements a **Deep Learning-based LiDAR Super-Resolution (SR)** framework to enhance sparse 8-channel LiDAR data into high-density 128-channel representations. By integrating **Knowledge Distillation (KD)** and **Semantic Segmentation**, the system significantly improves object recognition performance in low-cost sensor environments.
 
 * **Role:** Independent Researcher (Data Collection, Model Design, Evaluation)
