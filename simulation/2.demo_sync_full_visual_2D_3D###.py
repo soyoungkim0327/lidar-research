@@ -121,9 +121,11 @@ def main():
             data = np.copy(np.frombuffer(lidar_data.raw_data, dtype=np.dtype('f4')))
             data = np.reshape(data, (int(data.shape[0] / 4), 4))
             
-            # 1. 거울 모드 해제 (이게 핵심)
+
+            # [수정] 좌우 반전 해결 (Y축 반전)
+            # CARLA (Left-Handed) -> Open3D (Right-Handed) 보정
             points = data[:, :-1]
-            # points[:, :1] = -points[:, :1]  <-- 이거 주석처리 된 거 맞습니다! (전방 = 정방향)
+            points[:, 1] = -points[:, 1]  # <--- ★ 핵심 수정: Y축(좌우) 반전
             
             intensity = data[:, -1]
             intensity_col = 1.0 - np.log(intensity) / np.log(np.exp(-0.004 * 100))
