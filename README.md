@@ -19,8 +19,8 @@ Here are the demonstration videos of the data collection and visualization syste
 
 | **1. Autopilot Mode** | **2. 1st Person View** | **3. Full Integration (North-Up)** |
 | :---: | :---: | :---: |
-| [**[▶️ Watch Demo 1]**](https://youtu.be/OOXVz8CxH-o) | [**[▶️ Watch Demo 2]**](https://youtu.be/zsbFbVcQ5rs) | [**[▶️ Watch Demo 3]**](https://youtu.be/gyIYqvA1HMU) |
-| *Synced LiDAR & YOLO* | *Driver's Perspective* | *2D/3D Aligned Visualization* |
+| [**[▶️ Watch Demo 1]**](https://youtu.be/OOXVz8CxH-o) | [**[▶️ Watch Demo 2]**](https://youtu.be/zsbFbVcQ5rs) | [**[▶️ Watch Demo 3]**](https://www.youtube.com/watch?v=bGTpCJeoDx0) |
+| *YOLO Sensor Streaming* | *Driver's Perspective* | *Lidar 2D/3D Aligned Visualization* |
 
 ---
 
@@ -30,7 +30,7 @@ Here are the demonstration videos of the data collection and visualization syste
 * Developed `TinyRangeSR`, a lightweight residual CNN to upsample 8ch inputs to 128ch.
 * Implemented **Spatial Feature Extraction** using `Conv2d` layers and bilinear interpolation.
 
-### 2. Teacher-Student Knowledge Distillation
+### 2. Teacher-Student Knowledge Distillati
 * **Teacher:** 128-channel High-Fidelity LiDAR (Semantic Mask Ground Truth).
 * **Student:** 8-channel Sparse LiDAR.
 * **Method:** Transferred geometric and semantic knowledge from Teacher to Student, enabling the 8ch sensor to recognize objects with "128ch-level intelligence."
